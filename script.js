@@ -40,7 +40,7 @@ const FIREBASE_CONFIG = {
   projectId: "uncle-ratt-project",
   storageBucket: "uncle-ratt-project.firebasestorage.app",
   messagingSenderId: "58570652514",
-  appId: "G-K90C9PV2ZX"
+  appId: "1:58570652514:web:c330dcb7ef9fea2fd58a3b"
 };
 
 const WHATSAPP_NUMBER = "254745477064"; // digits only, country code first
