@@ -35,15 +35,15 @@
    ========================================================================== */
 
 const FIREBASE_CONFIG = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCSfaLXuemla19srKVihV6W3WLLo9RPUx8",
+  authDomain: "uncle-ratt-project.firebaseapp.com",
+  projectId: "uncle-ratt-project",
+  storageBucket: "uncle-ratt-project.firebasestorage.app",
+  messagingSenderId: "58570652514",
+  appId: "1:58570652514:web:c330dcb7ef9fea2fd58a3b"
 };
 
-const WHATSAPP_NUMBER = "254700000000"; // digits only, country code first
+const WHATSAPP_NUMBER = "254745477064"; // digits only, country code first
 
 const DEFAULT_CATEGORIES = [
   { id: "whiskey", name: "Whiskey", icon: "🥃" },
