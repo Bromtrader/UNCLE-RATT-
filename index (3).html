@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uncle Ratt — Premium Wines & Spirits</title>
+<meta name="description" content="Uncle Ratt: premium whiskey, wine, vodka, gin, tequila, champagne and cognac. Quality bottles, great prices, fast service.">
+<meta name="theme-color" content="#0b0709">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Uncle Ratt — Premium Wines & Spirits">
+<meta property="og:description" content="Quality bottles. Great prices. Fast service.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍾</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader" aria-hidden="true">
+  <div class="pour-mark">
+    <svg viewBox="0 0 60 60" class="pour-glass">
+      <path d="M15 6 H45 L38 40 Q30 48 22 40 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <rect class="pour-fill" x="19" y="30" width="22" height="10" fill="currentColor"/>
+    </svg>
+    <span>UNCLE RATT</span>
+  </div>
+</div>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="Uncle Ratt home">
+      <span class="brand-seal" aria-hidden="true">UR</span>
+      <span class="brand-word">Uncle&nbsp;Ratt</span>
+    </a>
+
+    <nav class="primary-links" aria-label="Primary">
+      <a href="#home" class="nav-link active-link">Home</a>
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#categories" class="nav-link">Categories</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="darkModeToggle" aria-label="Toggle light mode" title="Toggle light mode">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54A9 9 0 0 0 12 3z"/></svg>
+      </button>
+      <button class="icon-btn" id="cartToggle" aria-label="Open cart" title="Cart">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 4h-2v2h2l3.6 7.59-1.35 2.44A2 2 0 0 0 11 19h9v-2h-8.42a.25.25 0 0 1-.22-.37L12.1 15h6.45a2 2 0 0 0 1.75-1.03l3.24-5.88A1 1 0 0 0 22.66 6H8.21l-.94-2H7zM7 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a href="#admin" class="admin-link" id="adminLoginLink" title="Admin Login">•</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#products" class="nav-link">Products</a>
+    <a href="#categories" class="nav-link">Categories</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#admin" class="nav-link admin-link-mobile" id="adminLoginLinkMobile">Admin Login</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-bottle bottle-1"></div>
+      <div class="hero-bottle bottle-2"></div>
+      <div class="hero-bottle bottle-3"></div>
+      <div class="hero-bottle bottle-4"></div>
+      <div class="hero-bottle bottle-5"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-noise"></div>
+    </div>
+
+    <div class="hero-content reveal-up">
+      <p class="eyebrow">Est. purveyors of fine bottles</p>
+      <h1 class="hero-title">Premium Wines &amp; Spirits<br>at <span class="gold-text">Uncle Ratt</span></h1>
+      <p class="hero-sub">Quality bottles. Great prices. Fast service.</p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn btn-gold">Shop Now</a>
+        <a href="#contact" class="btn btn-ghost">Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong id="statBottleCount">300+</strong><span>Bottles curated</span></div>
+        <div><strong>10</strong><span>Categories</span></div>
+        <div><strong>24h</strong><span>Fast dispatch</span></div>
+      </div>
+    </div>
+    <a href="#products" class="scroll-cue" aria-label="Scroll to products">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ PROMO BANNER (dynamic) ============ -->
+  <div id="promoBanner" class="promo-banner" hidden>
+    <div class="promo-inner">
+      <span id="promoText"></span>
+      <button class="promo-close" id="promoClose" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section id="categories" class="section categories-section">
+    <div class="section-head reveal-up">
+      <p class="eyebrow">The Cellar, Sorted</p>
+      <h2>Shop by Category</h2>
+    </div>
+    <div class="category-grid" id="categoryGrid"><!-- injected --></div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section id="products" class="section products-section">
+    <div class="section-head reveal-up">
+      <p class="eyebrow">The Collection</p>
+      <h2>Bottles in the House</h2>
+    </div>
+
+    <div class="filter-bar reveal-up">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/></svg>
+        <input type="search" id="searchInput" placeholder="Search bottles, e.g. Cognac, Gin..." aria-label="Search products">
+      </div>
+      <select id="categoryFilter" aria-label="Filter by category">
+        <option value="all">All Categories</option>
+      </select>
+      <select id="priceFilter" aria-label="Filter by price">
+        <option value="all">Any Price</option>
+        <option value="0-1000">Under KSh 1,000</option>
+        <option value="1000-3000">KSh 1,000 – 3,000</option>
+        <option value="3000-6000">KSh 3,000 – 6,000</option>
+        <option value="6000-999999">KSh 6,000+</option>
+      </select>
+      <select id="sortFilter" aria-label="Sort products">
+        <option value="newest">Newest</option>
+        <option value="cheapest">Price: Low to High</option>
+        <option value="expensive">Price: High to Low</option>
+        <option value="popular">Most Popular</option>
+      </select>
+    </div>
+
+    <div class="chip-row" id="chipRow"><!-- category quick chips injected --></div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- product cards injected by script.js -->
+    </div>
+
+    <p class="empty-state" id="emptyState" hidden>No bottles match your search — try clearing a filter.</p>
+    <div class="loader-row" id="productsLoader">
+      <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED ============ -->
+  <section class="section featured-section">
+    <div class="section-head reveal-up">
+      <p class="eyebrow">Hand-Picked</p>
+      <h2>Featured Bottles</h2>
+    </div>
+    <div class="product-grid featured-grid" id="featuredGrid"></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about-section">
+    <div class="about-grid">
+      <div class="about-copy reveal-up">
+        <p class="eyebrow">Our Story</p>
+        <h2>Poured with Care Since Day One</h2>
+        <p>Uncle Ratt began as a single shelf of well-chosen bottles and a promise: never sell anything we wouldn't pour ourselves. Today that promise still stands across whiskey, wine, gin, cognac and everything between.</p>
+        <p>We work directly with trusted distributors to keep every bottle authentic, every price fair, and every order moving fast — from our counter to your glass.</p>
+        <ul class="about-points">
+          <li>100% authentic, sealed bottles</li>
+          <li>Temperature-controlled storage</li>
+          <li>Same-day dispatch on local orders</li>
+          <li>Age verification on every sale</li>
+        </ul>
+      </div>
+      <div class="about-visual reveal-up" aria-hidden="true">
+        <div class="wax-seal-lg">UR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head reveal-up">
+      <p class="eyebrow">Visit or Reach Us</p>
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card glass-panel reveal-up">
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z"/></svg>
+            <a href="tel:+254700000000">+254 700 000 000</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+            <a href="mailto:hello@uncleratt.com">hello@uncleratt.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5"/></svg>
+            <span>Kimathi Street, Nairobi CBD, Kenya</span>
+          </li>
+        </ul>
+        <div class="hours-table">
+          <h3>Business Hours</h3>
+          <div><span>Mon – Fri</span><span>9:00 – 21:00</span></div>
+          <div><span>Saturday</span><span>9:00 – 22:00</span></div>
+          <div><span>Sunday</span><span>11:00 – 20:00</span></div>
+        </div>
+        <a class="btn btn-gold whatsapp-inline" href="https://wa.me/254700000000" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+      <div class="map-wrap reveal-up">
+        <iframe
+          title="Uncle Ratt location map"
+          src="https://www.google.com/maps?q=Kimathi%20Street%2C%20Nairobi&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/254700000000" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26"><path fill="currentColor" d="M16 3C9 3 3 9 3 16c0 2.6.8 5 2.1 7L3 29l6.2-2c2 .8 4.1 1.3 6.4 1.3 7.1 0 13-5.9 13-13S23.1 3 16 3zm7.6 18.7c-.3.9-1.8 1.7-2.5 1.8-.6.1-1.4.2-4.4-1-3.7-1.6-6.1-5.3-6.3-5.6-.2-.3-1.5-2-1.5-3.8 0-1.8.9-2.6 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.2.4 0 .7-.1.3-.2.4-.4.6-.2.3-.4.5-.6.7-.2.2-.4.5-.2.9.2.4 1 1.7 2.2 2.7 1.5 1.3 2.7 1.8 3.1 1.9.4.2.6.1.9-.1.2-.3 1-1.1 1.3-1.5.3-.4.5-.3.9-.2.4.2 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1 1-.2 1.9z"/></svg>
+</a>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 20V6M6 12l6-6 6 6"/></svg>
+</button>
+
+<!-- ============ PRODUCT QUICK VIEW MODAL ============ -->
+<div class="modal-overlay" id="productModalOverlay" hidden>
+  <div class="modal product-modal glass-panel" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+    <button class="modal-close" data-close="productModalOverlay" aria-label="Close">&times;</button>
+    <div class="pm-body" id="productModalBody"><!-- injected --></div>
+    <div class="related-wrap">
+      <h3>You may also like</h3>
+      <div class="product-grid related-grid" id="relatedGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="drawer-overlay" id="cartOverlay" hidden></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3>Your Cart</h3>
+    <button class="modal-close" id="closeCart" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"><p class="cart-empty">Your cart is empty.</p></div>
+  <div class="cart-summary">
+    <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">KSh 0</span></div>
+    <div class="summary-row"><span>Delivery</span><span>Calculated at checkout</span></div>
+    <button class="btn btn-gold btn-block" id="checkoutBtn">Checkout via WhatsApp</button>
+  </div>
+</aside>
+
+<!-- ============ ADMIN LOGIN MODAL ============ -->
+<div class="modal-overlay" id="adminLoginOverlay" hidden>
+  <div class="modal login-modal glass-panel" role="dialog" aria-modal="true" aria-labelledby="alTitle">
+    <button class="modal-close" data-close="adminLoginOverlay" aria-label="Close">&times;</button>
+    <h3 id="alTitle">Admin Login</h3>
+    <p class="modal-sub">Authorized staff only.</p>
+    <form id="adminLoginForm">
+      <label>Email
+        <input type="email" id="adminEmail" required autocomplete="username">
+      </label>
+      <label>Password
+        <input type="password" id="adminPassword" required autocomplete="current-password">
+      </label>
+      <p class="form-error" id="adminLoginError" hidden></p>
+      <button type="submit" class="btn btn-gold btn-block">Sign In</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ ADMIN DASHBOARD ============ -->
+<div class="modal-overlay admin-overlay" id="adminDashOverlay" hidden>
+  <div class="admin-dash glass-panel" role="dialog" aria-modal="true" aria-labelledby="adTitle">
+    <div class="admin-head">
+      <h3 id="adTitle">Uncle Ratt — Admin Dashboard</h3>
+      <div class="admin-head-actions">
+        <span id="adminUserEmail"></span>
+        <button class="btn btn-ghost btn-sm" id="adminLogoutBtn">Log Out</button>
+        <button class="modal-close" data-close="adminDashOverlay" aria-label="Close">&times;</button>
+      </div>
+    </div>
+
+    <div class="admin-tabs" role="tablist">
+      <button class="admin-tab active" data-tab="tabProducts">Products</button>
+      <button class="admin-tab" data-tab="tabOrders">Orders</button>
+      <button class="admin-tab" data-tab="tabStats">Sales Stats</button>
+      <button class="admin-tab" data-tab="tabCategories">Categories</button>
+      <button class="admin-tab" data-tab="tabBanners">Banners</button>
+    </div>
+
+    <!-- PRODUCTS TAB -->
+    <div class="admin-panel active" id="tabProducts">
+      <div class="admin-panel-head">
+        <h4>Products</h4>
+        <button class="btn btn-gold btn-sm" id="newProductBtn">+ Add Product</button>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th></th><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Featured</th><th></th></tr></thead>
+          <tbody id="adminProductRows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ORDERS TAB -->
+    <div class="admin-panel" id="tabOrders">
+      <div class="admin-panel-head"><h4>Customer Orders</h4></div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th><th>Date</th></tr></thead>
+          <tbody id="adminOrderRows"></tbody>
+        </table>
+      </div>
+      <p class="admin-empty" id="ordersEmpty" hidden>No orders yet.</p>
+    </div>
+
+    <!-- STATS TAB -->
+    <div class="admin-panel" id="tabStats">
+      <div class="stats-grid">
+        <div class="stat-card"><span>Total Revenue</span><strong id="statRevenue">KSh 0</strong></div>
+        <div class="stat-card"><span>Total Orders</span><strong id="statOrders">0</strong></div>
+        <div class="stat-card"><span>Products Listed</span><strong id="statProducts">0</strong></div>
+        <div class="stat-card"><span>Out of Stock</span><strong id="statOOS">0</strong></div>
+      </div>
+      <h4>Top Selling Bottles</h4>
+      <ol class="top-list" id="topSellersList"></ol>
+    </div>
+
+    <!-- CATEGORIES TAB -->
+    <div class="admin-panel" id="tabCategories">
+      <div class="admin-panel-head">
+        <h4>Categories</h4>
+        <form id="newCategoryForm" class="inline-form">
+          <input type="text" id="newCategoryName" placeholder="New category name" required>
+          <button class="btn btn-gold btn-sm" type="submit">Add</button>
+        </form>
+      </div>
+      <ul class="category-manage-list" id="categoryManageList"></ul>
+    </div>
+
+    <!-- BANNERS TAB -->
+    <div class="admin-panel" id="tabBanners">
+      <div class="admin-panel-head"><h4>Promotional Banner</h4></div>
+      <form id="bannerForm" class="banner-form">
+        <label>Banner Message
+          <input type="text" id="bannerText" placeholder="e.g. Free delivery on orders over KSh 5,000 this weekend!">
+        </label>
+        <label class="checkbox-row"><input type="checkbox" id="bannerActive"> Show banner on storefront</label>
+        <button class="btn btn-gold btn-sm" type="submit">Save Banner</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRODUCT EDIT MODAL (admin) ============ -->
+<div class="modal-overlay" id="productFormOverlay" hidden>
+  <div class="modal glass-panel product-form-modal" role="dialog" aria-modal="true" aria-labelledby="pfTitle">
+    <button class="modal-close" data-close="productFormOverlay" aria-label="Close">&times;</button>
+    <h3 id="pfTitle">Add Product</h3>
+    <form id="productForm">
+      <input type="hidden" id="pfId">
+      <label>Bottle Image
+        <input type="file" id="pfImageFile" accept="image/*">
+      </label>
+      <div class="pf-preview-wrap">
+        <img id="pfImagePreview" alt="" hidden>
+        <span id="pfUploadProgress"></span>
+      </div>
+      <label>Product Name
+        <input type="text" id="pfName" required>
+      </label>
+      <div class="pf-row">
+        <label>Category
+          <select id="pfCategory" required></select>
+        </label>
+        <label>Price (KSh)
+          <input type="number" id="pfPrice" min="0" step="1" required>
+        </label>
+      </div>
+      <div class="pf-row">
+        <label>Bottle Size
+          <input type="text" id="pfSize" placeholder="e.g. 750ml">
+        </label>
+        <label>Alcohol %
+          <input type="text" id="pfAbv" placeholder="e.g. 40%">
+        </label>
+      </div>
+      <div class="pf-row">
+        <label>Stock Quantity
+          <input type="number" id="pfStock" min="0" step="1" value="0" required>
+        </label>
+        <label class="checkbox-row-block">
+          <input type="checkbox" id="pfFeatured"> Mark as Featured
+        </label>
+      </div>
+      <label>Description
+        <textarea id="pfDescription" rows="3" placeholder="Tasting notes, origin, pairing suggestions..."></textarea>
+      </label>
+      <p class="form-error" id="pfError" hidden></p>
+      <button type="submit" class="btn btn-gold btn-block" id="pfSubmitBtn">Save Product</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="brand-seal" aria-hidden="true">UR</span>
+      <p>Uncle Ratt is a licensed retailer of fine wines and spirits. Please enjoy responsibly. Age verification (18+/21+, per local law) is required on all orders.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2c2.7 0 3 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.55.9 1.1 1.15 1.8.25.7.42 1.4.47 2.5C22 8.98 22 9.3 22 12s0 3-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8-.55.5-1.1.9-1.8 1.15-.7.25-1.4.42-2.5.47C15 22 14.7 22 12 22s-3 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47-.7-.27-1.2-.6-1.8-1.15-.5-.55-.9-1.1-1.15-1.8-.25-.7-.42-1.4-.47-2.5C2 15 2 14.7 2 12s0-3 .06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.55-.5 1.1-.9 1.8-1.15.7-.25 1.4-.42 2.5-.47C9 2 9.3 2 12 2m0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10m0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4M17.6 6.4a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M13.5 21v-7.9h2.66l.4-3.09h-3.06V8.06c0-.9.25-1.5 1.53-1.5h1.64V3.83C15.9 3.78 15 3.7 14 3.7c-2.35 0-3.96 1.44-3.96 4.07v2.24H7.36v3.09h2.68V21z"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 3h4.3l4 5.4L16 3h4l-6.3 8.1L21 21h-4.4l-4.4-5.9L6.6 21H3l6.8-8.6z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#products" data-cat-link="Whiskey">Whiskey</a>
+      <a href="#products" data-cat-link="Wine">Wine</a>
+      <a href="#products" data-cat-link="Gin">Gin</a>
+      <a href="#products" data-cat-link="Cognac">Cognac</a>
+      <a href="#products" data-cat-link="Champagne">Champagne</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#" id="privacyLink">Privacy Policy</a>
+      <a href="#" id="termsLink">Terms &amp; Conditions</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Uncle Ratt. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ LEGAL MODAL (privacy/terms) ============ -->
+<div class="modal-overlay" id="legalOverlay" hidden>
+  <div class="modal glass-panel" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+    <button class="modal-close" data-close="legalOverlay" aria-label="Close">&times;</button>
+    <h3 id="legalTitle">Privacy Policy</h3>
+    <div id="legalBody" class="legal-body"></div>
+  </div>
+</div>
+
+<!-- Firebase SDKs (compat build — no bundler required) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage-compat.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
